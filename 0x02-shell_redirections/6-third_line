@@ -1,1 +1,2 @@
-VimCrypt~03!/œ9v ±<Ù«&ß“\PÛ◊•ø›lîú∑Kô£í,G8∫ŒN33∑-ë[´£u.ªd`/$!
+#!/bin/bash
+head -n 3 iacta | tail -n 1
