@@ -1,24 +1,41 @@
-# 0x09-web_infrastructure_design
-## An overview of what happens when you browse the web
+# Project: 0x09. Web infrastructure design
 
-When a user types an address into the search bar of a browser, several processes are initiated to retrieve the desired website or web page. Here's an overview of what happens:
+## Description
 
-User input: The user enters the address, also known as a URL (Uniform Resource Locator), into the search bar. The URL can be in the form of "http://" or "https://" followed by the domain name (e.g., www.alx.com) or the IP address (e.g., 192.168.0.1) of the website they want to visit.
+This project is a collection of web infrastructure designs that could be implemented in any web development project.
 
-DNS resolution: The browser first checks its local cache to see if it has the IP address corresponding to the entered domain name. If it doesn't have the information, the browser sends a DNS (Domain Name System) lookup request to a DNS server. The DNS server translates the domain name into an IP address, allowing the browser to locate the web server that hosts the website.
 
-Establishing a connection: Once the browser has the IP address, it opens a TCP (Transmission Control Protocol) connection with the web server. This connection is established using a three-way handshake process to ensure reliable data transmission between the browser and the server.
+## Resources
 
-HTTP request: After the connection is established, the browser sends an HTTP (Hypertext Transfer Protocol) request to the web server. The request includes the method (such as GET, POST, etc.), headers (additional information about the request), and the URL of the specific page or resource the user wants to access.
+#### Read or watch:
 
-Server processing: The web server receives the HTTP request and processes it. It determines which web page or resource corresponds to the requested URL and prepares a response.
+* [Network basics concept page]()
+* [Server concept page]()
+* [Web server concept page]()
+* [DNS concept page]()
+* [Load balancer concept page]()
+* [Monitoring concept page]()
+* [What is a database](https://intranet.alxswe.com/rltoken/n3CdS3EA5l5psDDKbEhApA)
+* [What's the difference between a web server and an app server?](https://intranet.alxswe.com/rltoken/0as4wDlFqyhLhf0f_gedcw)
+* [DNS record types](https://intranet.alxswe.com/rltoken/Pl3UoEfAO7K_jUKRLMmnAQ)
+* [Single point of failure](https://intranet.alxswe.com/rltoken/uxpx2YhXs10TFLIDg78chA)
+* [How to avoid downtime when deploying new code](https://intranet.alxswe.com/rltoken/4ansLu2gtHnoFrNThqyObA)
+* [High availability cluster (active-active/active-passive)](https://intranet.alxswe.com/rltoken/TAJeVYy9U9iLaEDd6XkbRA)
+* [What is HTTPS](https://intranet.alxswe.com/rltoken/c0zs2MxrmxFLsCPOizxq6g)
+* [What is a firewall](https://intranet.alxswe.com/rltoken/j6idMcUTyNEDj1oYDQFmUw)
+## Learning Objectives
 
-Server response: The web server generates an HTTP response, which includes a status code, headers (containing metadata), and the requested content. The status code indicates whether the request was successful (e.g., 200 OK) or encountered an error (e.g., 404 Not Found).
+### General
 
-Data transfer: The server sends the HTTP response back to the browser over the established TCP connection. The response typically includes the HTML content of the web page, but it can also contain other resources like CSS stylesheets, JavaScript files, images, etc. These resources may be referenced in the HTML and are requested separately if necessary.
+* You must be able to draw a diagram covering the web stack you built with the sysadmin/devops track projects
+* You must be able to explain what each component is doing
+* You must be able to explain system redundancy
+* Know all the mentioned acronyms: LAMP, SPOF, QPS
+## Tasks
 
-Rendering the page: The browser receives the response and begins parsing the HTML content. It fetches any additional resources referenced in the HTML (e.g., images, scripts) by sending additional HTTP requests to the server. The browser then processes the received data and renders the web page according to the HTML, CSS, and JavaScript instructions.
-
-Displaying the page: Once the browser has finished rendering the web page, it displays the final result in its window. The user can now see and interact with the requested website.
-
-Throughout this process, there may be additional complexities like caching, redirects, SSL/TLS encryption, and more, depending on the specific circumstances. However, this overview covers the fundamental steps involved in loading a website when a user types an address into the browser's search bar.
+| Task | File |
+| ---- | ---- |
+| 0. Simple web stack | [0-simple_web_stack](./0-simple_web_stack) |
+| 1. Distributed web infrastructure | [1-distributed_web_infrastructure](./1-distributed_web_infrastructure) |
+| 2. Secured and monitored web infrastructure | [2-secured_and_monitored_web_infrastructure](./2-secured_and_monitored_web_infrastructure) |
+| 3. Scale up | [3-scale_up](./3-scale_up) |

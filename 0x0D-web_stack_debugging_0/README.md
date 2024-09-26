@@ -1,6 +1,12 @@
-# Web stack debugging #0
-> > Computers and software rarely work the way we want (that’s the “fun” part of the job!).
+# Project: 0x0D. Web stack debugging #0
 
-> > Being able to debug a webstack is essential for a 
+## Resources
 
-> > Full-Stack Software Engineer, and it takes practice to be a master of it.
+#### Read or watch:
+
+* [curl]()
+## Tasks
+
+| Task | File |
+| ---- | ---- |
+| 0. Give me a page! | [0-give_me_a_page](./0-give_me_a_page) |

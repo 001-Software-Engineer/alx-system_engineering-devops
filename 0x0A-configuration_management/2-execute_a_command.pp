@@ -1,6 +1,6 @@
-# How to use the exec resource of Puppet
+# kills a process named 'killmanow'
 
-exec { 'kill_process':
-  command => 'pkill -f killmenow',
-  path    => ['/bin', '/usr/bin', '/sbin', '/usr/sbin'],
+exec {'pkill':
+  command  => 'pkill killmenow',
+  provider => 'shell',
 }

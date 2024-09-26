@@ -1,16 +1,24 @@
-# HTTPS SSL
+# Project: 0x10. HTTPS SSL
 
-HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, the protocol used for transmitting data over the internet. It incorporates SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security), to provide encryption and authentication for secure communication between a client (usually a web browser) and a server.
+## Resources
 
-The two main roles of HTTPS and SSL/TLS are as follows:
+#### Read or watch:
 
-* Encryption: The primary role of HTTPS and SSL/TLS is to ensure secure communication by encrypting the data transmitted between the client and the server. Encryption transforms the data into a format that can only be read by authorized parties, preventing unauthorized access or eavesdropping.
-When a client establishes a connection with an HTTPS-enabled website, SSL/TLS initiates a handshake process, during which the client and server agree on encryption algorithms and exchange cryptographic keys. These keys are then used to encrypt and decrypt data during the session, protecting it from interception or tampering.
-
-Encryption ensures the confidentiality and integrity of the transmitted data, making it extremely difficult for malicious actors to intercept and decipher sensitive information, such as passwords, financial details, or personal data.
-* Authentication: The second important role of SSL/TLS is to provide authentication. SSL/TLS allows the client to verify the identity of the server it is communicating with, ensuring that it is connecting to the intended and trusted website.
-Authentication is achieved through the use of digital certificates, which are issued by trusted Certificate Authorities (CAs). These certificates contain the website's public key and are signed by the CA, serving as a digital credential that verifies the authenticity of the website.
+* [What is HTTPS?](https://intranet.alxswe.com/rltoken/XT1BAiBL3Jpq1bn1q6IYXQ)
+* [What are the 2 main elements that SSL is providing](https://intranet.alxswe.com/rltoken/STj5WkAPACBxOvwB77Ycrw)
+* [HAProxy SSL termination on Ubuntu16.04](https://intranet.alxswe.com/rltoken/XD_RckEgjds0UkoMsfxp2A)
+* [SSL termination](https://intranet.alxswe.com/rltoken/CKUICfppIWI6UC0coEMB8g)
+* [Bash function](https://intranet.alxswe.com/rltoken/zPjZ7-eSSQsLFsGA16C1HQ)
 ## Learning Objectives
+
+### General
+
 * What is HTTPS SSL 2 main roles
 * What is the purpose encrypting traffic
 * What SSL termination means
+## Tasks
+
+| Task | File |
+| ---- | ---- |
+| 0. World wide web | [0-world_wide_web](./0-world_wide_web) |
+| 1. HAproxy SSL termination | [1-haproxy_ssl_termination](./1-haproxy_ssl_termination) |

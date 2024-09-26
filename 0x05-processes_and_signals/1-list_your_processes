@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# script that displays a list of currently running processes 
+# This Bash script that displays a list of currently running processes.
 
-ps auxf
+# source: https://linuxize.com/post/ps-command-in-linux/
+ps -auxf

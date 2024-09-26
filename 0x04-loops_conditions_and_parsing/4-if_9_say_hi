@@ -1,16 +1,11 @@
 #!/usr/bin/env bash
-# Using if and while statement constrcut to print
+#  Bash script that displays Best School 10 times, but for the 9th iteration,then Hi on a new line
 
 counter=1
-
-while [ $counter -le 10 ]
-do
-	if [ $counter -eq 10 ]
-	then
-		echo "Hi"
-	fi
-
-	echo "Best School"
-	
-	((counter++))
+while [ $counter -lt 11 ]; do
+    echo "Best School"
+    if [ $counter -eq 9 ]; then
+        echo "Hi"
+    fi
+    ((counter++))
 done
